@@ -1,6 +1,7 @@
 html, body{
     margin: 0px;
     overscroll-behavior: none;
+    padding-bottom: 20px;
 }
 
 h1, p, a{
@@ -14,11 +15,8 @@ h1{
     margin-bottom: 10px;
 }
 
-p{
-    font-size: 16px;
-}
-
-a{
+p, a{
+    font-size: 14px;
     text-decoration: none;
     color: black;
 }
@@ -27,49 +25,59 @@ a:hover{
     text-decoration: underline;
 }
 
+/* navbar */
 .navbar{
-    position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
+    position: sticky;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    column-gap: 20px;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .unimportant{
+        display: none;
+    }
 }
 
 /* index.html */
-.projectGrid{
+.indexGrid{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-}
-
-.thumbnails{
-    padding: 50px 75px;
-    pointer-events: none;
-}
-
-.projectGrid img{
-    max-height: 150px;
-    max-width: 150px;
     padding: 0px;
+}
+
+.indexGrid img{
+    max-width: 250px;
+    padding: 20px;
     pointer-events: all;
 }
 
-/* Work/(projects).html */
-.project{
-    display: flex;
-    flex-direction: column;
+/* Work/(project).html */
+.projectGrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
     padding: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
-.projectImgs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+@media (max-width: 768px){
+    .projectGrid{
+        grid-template-columns: 1fr;
+    }
+    .projectGrid p{
+        display: none;
+    }
 }
 
-.project img{
-    max-height: 500px;
-    max-width: 500px;
-    padding: 50px;
+.projectGrid img{
+    max-width: 100%;
 }
