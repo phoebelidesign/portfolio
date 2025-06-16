@@ -39,6 +39,7 @@ a:hover{
     .navbar{
         grid-template-columns: 1fr;
         row-gap: 20px;
+        position: relative;
     }
     .unimportant{
         display: none;
@@ -56,6 +57,7 @@ a:hover{
 
 .indexGrid img{
     max-width: 250px;
+    height: auto;
     padding: 20px;
     pointer-events: all;
 }
