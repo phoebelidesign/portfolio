@@ -1,7 +1,6 @@
 html, body{
     margin: 0px;
     overscroll-behavior: none;
-    padding-bottom: 20px;
 }
 
 h1, p, a{
@@ -63,23 +62,37 @@ a:hover{
 }
 
 /* Work/(project).html */
+.project{
+    padding: 20px;
+}
+
 .projectGrid{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
-    padding: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.projectGrid1{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
     column-gap: 20px;
     row-gap: 20px;
 }
 
 @media (max-width: 768px){
-    .projectGrid{
+    .projectGrid, .projectGrid1{
         grid-template-columns: 1fr;
     }
-    .projectGrid p{
+    .projectGrid p, .projectGrid1 p{
         display: none;
     }
 }
 
-.projectGrid img{
+.projectGrid img, .projectGrid1 img{
     max-width: 100%;
+}
+
+.video iframe{
+    height: 100%;
 }
