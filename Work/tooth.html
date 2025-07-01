@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Phoebe Li Portfolio</title>
+    <script src="../scripts.js" delay></script>
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../Assets/favicon.webp">
 </head>
@@ -20,12 +21,38 @@
         <p class="unimportant">
             Typography
         </p>
-        <p>A modular typeface constructed using right angled isosceles triangles as a base unit. An inquiry into the relationship between blackletter and glyphic styles, creating structures that feel both jagged and fluid. Inspiration is drawn from the dense, textural quality of blackletter letterforms, yet with a more geometric approach as opposed to ornamental. Though formally a sans serif, its angular modules evoke the sharpness of glyphic letterforms, creating an illusion of serifs.</p>
+        <p class="span2">A modular typeface constructed using right angled isosceles triangles as a base unit, creating structures that feel both jagged and fluid. An inquiry into the relationship between blackletter and glyphic styles. The blackletter style inspires the dense and angular quality of Tooth's letterforms, with a less ornamental and more geometric approach. Though Tooth is formally a sans serif typeface, the triangular modules create an illusion of serifs, echoing the sharpness of glyphic letterforms.</p>
     </div>
     <div class="project">
-        <div class="projectGrid1">
+        <div class="projectGrid"> 
             <p>Uppercase letterforms (A-Z)</p>
             <img src="../Assets/tooth.gif">
+            <p class="span2"></p>
+            <p></p>
+            <div class="span4">
+                <img src="../Assets/tooth-2.webp">
+            </div>
+            <p>Development</p>
+            <div class="span3">
+                <div class="slideContainer">
+                    <div class="slide">
+                        <img src="../Assets/jfn-1.webp">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-6.webp">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-10.webp">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -27,10 +27,11 @@ a:hover{
 /* navbar */
 .navbar{
     top: 0;
+    z-index: 999;
     position: sticky;
-    display: grid;
     padding: 20px;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     column-gap: 20px;
 }
 
@@ -68,31 +69,83 @@ a:hover{
 
 .projectGrid{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: repeat(5, 1fr);
     column-gap: 20px;
     row-gap: 20px;
 }
 
-.projectGrid1{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    column-gap: 20px;
-    row-gap: 20px;
+.projectGrid img{
+    max-width: 100%;
+    grid-column: span 2;
+}
+
+.span2{
+    grid-column: span 2;
+}
+
+.span3{
+    grid-column: span 3;
+}
+
+.span4{
+    grid-column: span 4;
 }
 
 @media (max-width: 768px){
-    .projectGrid, .projectGrid1{
+    .projectGrid{
         grid-template-columns: 1fr;
     }
-    .projectGrid p, .projectGrid1 p{
+    .projectGrid p{
         display: none;
     }
-}
-
-.projectGrid img, .projectGrid1 img{
-    max-width: 100%;
+    .projectGrid img, .span2, .span3, .span4{
+        grid-column: auto;
+    }
 }
 
 .video iframe{
     height: 100%;
+}
+
+    /* slides */
+.slideContainer{
+    position: relative;
+}
+
+.slide{
+    display: none;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 20px;
+    color: #717171;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+}
+
+.prev:hover, .next:hover{
+    text-decoration: none;
+}
+
+.dot{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    margin: 0 1px 0;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
 }

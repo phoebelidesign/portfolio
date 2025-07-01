@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Phoebe Li Portfolio</title>
+    <script src="../scripts.js" delay></script>
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../Assets/favicon.webp">
 </head>
@@ -20,7 +21,7 @@
         <p class="unimportant">
             Visual identity
         </p>
-        <p>Concept for a refined A2 Milk® brand identity, moving away from a generic design towards a more focused reflection of the brand's passion and belief in their unique selling point. A minimal wordmark logo highlights a product of quality and regard, encouraging brand recognition. A colour palette of vibrant and rich tones convey authenticity and wellness, whilst also aligning with industry standards. A bold yet playful primary typeface, paired with a clean secondary typeface, together strike a balance between passion and quality. A minimal illustration style enhances shelf presence, with the gut visual clearly and efficiently portraying their individual ‘easier on digestion’ benefit.</p>
+        <p class="span2">Concept for a refined A2 Milk® brand identity, moving away from a generic design towards a more focused reflection of the brand's passion and belief in their unique selling point. A minimal wordmark logo highlights a product of quality and regard, encouraging brand recognition. A colour palette of vibrant and rich tones convey authenticity and wellness, whilst also aligning with industry standards. A bold yet playful primary typeface, paired with a clean secondary typeface, together strike a balance between passion and quality. A minimal illustration style enhances shelf presence, with the gut visual clearly and efficiently portraying their individual ‘easier on digestion’ benefit.</p>
     </div>
     <div class="project">
         <div class="projectGrid">
@@ -33,6 +34,27 @@
             <p>Packaging</p>
             <img src="../Assets/a2-5.webp">
             <img src="../Assets/a2-6.webp">
+            <p>Development</p>
+            <div class="span3">
+                <div class="slideContainer">
+                    <div class="slide">
+                        <img src="../Assets/jfn-1.webp">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-6.webp">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-10.webp">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
         </div>
     </div>
 </body>

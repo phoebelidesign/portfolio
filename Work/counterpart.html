@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Phoebe Li Portfolio</title>
+    <script src="../scripts.js" delay></script>
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../Assets/favicon.webp">
 </head>
@@ -21,7 +22,7 @@
             <br>Publication
             <br>Typography           
         </p>
-        <p>An experimental newspaper exploring the notion of existing as a constituent of a whole, reflecting on my lived experience of twinhood. It contemplates the balance between symmetry and duality; my sense of self is at once distinct and deeply linked to another. I consider how this dynamic connects with a broader narrative - one where twin identity is often misunderstood, oversimplified, and commodified by the wider world. The newspaper format serves as a vessel that mirrors this accessibility and misinterpretation of twinhood in popular culture, highlighting the tension of information that exists both revealed and concealed.</p>
+        <p class="span2">An experimental newspaper exploring the notion of existing as a constituent of a whole, reflecting on my lived experience of twinhood. It contemplates the balance between symmetry and duality; my sense of self is at once distinct and deeply linked to another. I consider how this dynamic connects with a broader narrative - one where twin identity is often misunderstood, oversimplified, and commodified by the wider world. The newspaper format serves as a vessel that mirrors this accessibility and misinterpretation of twinhood in popular culture, highlighting the tension of information that exists both revealed and concealed.</p>
     </div>
     <div class="project">
         <div class="projectGrid">
@@ -37,6 +38,27 @@
             <p></p>
             <img src="../Assets/ctp-7.webp">
             <img src="../Assets/ctp-8.webp">
+            <p>Development</p>
+            <div class="span3">
+                <div class="slideContainer">
+                    <div class="slide">
+                        <img src="../Assets/jfn-1.webp">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-6.webp">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-10.webp">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
         </div>
     </div>
 </body>

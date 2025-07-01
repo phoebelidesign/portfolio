@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Phoebe Li Portfolio</title>
+    <script src="../scripts.js" delay></script>
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../Assets/favicon.webp">
 </head>
@@ -22,21 +23,36 @@
             <br>Photography
             <br>Sound design       
         </p>
-        <p>An experimental short film exploring fleeting moments of wakefulness - decisive moments of clarity that vanish almost immediately. Like objects left in darkness picking up a faint sheen of reflected light from time to time. Inspired by excerpt from Jun'ichirō Tanizaki's In Praise of Shadows (1933): “I need only pause before it and I forget the passage of time.” Frames include both digital video and 35mm film, collaged and scanned. Sound includes found audio and instrumental from Sour Times by Portishead.</p>
+        <p class="span2">An experimental short film exploring fleeting moments of wakefulness - decisive moments of clarity that vanish almost immediately. Inspired by excerpt from Jun'ichirō Tanizaki's In Praise of Shadows (1933): “I need only pause before it and I forget the passage of time.” Frames include both digital video and 35mm film, collaged and scanned. Sound includes found audio and instrumental from Sour Times by Portishead.</p>
     </div>
     <div class="project">
-        <div class="projectGrid1">
+        <div class="projectGrid">
             <p>Short film</p>
-            <video width="100%" height="auto" controls poster="../Assets/wm-1.webp">
+            <video class="span4" width="100%" height="auto" controls poster="../Assets/wm-thumbnail.webp">
                 <source src="../Assets/wm.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        <p></p>
-        </div>
-        <div class="projectGrid">
             <p>Development</p>
-            <img src="../Assets/0DD51265-0539-49C5-A5C4-80D586D7DBCE.jpg">
-            <img src="../Assets/0DD51265-0539-49C5-A5C4-80D586D7DBCE.jpg">
+            <div class="span3">
+                <div class="slideContainer">
+                    <div class="slide">
+                        <img src="../Assets/jfn-1.webp" style="width:100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-6.webp" style="width:100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-10.webp" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
         </div>
     </div>
 </body>

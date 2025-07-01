@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Phoebe Li Portfolio</title>
+    <script src="../scripts.js" delay></script>
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../Assets/favicon.webp">
 </head>
@@ -14,14 +15,14 @@
             <br>Semester 2, 2025
         </p>
         <p>JUST FOR NOW
-            <br><br><a href="../index.html">Next: ...</a>
+            <br><br><a href="../Work/sunburn.html">Next: Sunburn</a>
             <br><a href="../Work/waking-moment.html">Previous: Waking Moment</a>
         </p>
         <p class="unimportant">
             Photography
             <br>Publication         
         </p>
-        <p>A handbound photobook documenting observations of a brief odyssey. Shot on 35mm film and digital, printed on 170gsm silk-finish paper and bound with a white-thread kettle stitch. A collection of quiet moments and visual notes - these are messages meant for home.</p>
+        <p class="span2">A handbound photobook documenting observations of a brief odyssey. Shot on 35mm film and digital, printed on 170gsm silk-finish paper and bound with a white-thread kettle stitch. A collection of quiet moments and visual notes - these are messages meant for home.</p>
     </div>
     <div class="project">
         <div class="projectGrid">
@@ -40,6 +41,27 @@
             <p></p>
             <img src="../Assets/jfn-9.webp">
             <img src="../Assets/jfn-10.webp">
+            <p>Development</p>
+            <div class="span3">
+                <div class="slideContainer">
+                    <div class="slide">
+                        <img src="../Assets/jfn-1.webp" style="width:100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-6.webp" style="width:100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-10.webp" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
         </div>
     </div>
 </body>
