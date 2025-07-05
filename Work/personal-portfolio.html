@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Phoebe Li Portfolio</title>
+    <script src="../scripts.js" delay></script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../Assets/favicon.webp">
+</head>
+<body>
+    <div class="navbar">
+        <p>
+            <a href="../index.html">Phoebe Li Portfolio</a>
+            <br><br>Application for MC250
+            <br>Master of Communication Design
+            <br>Semester 2, 2025
+        </p>
+        <p>PERSONAL PORTFOLIO
+            <br><br><a href="../Work/tooth.html">Next: Tooth</a>
+            <br><a href="../Work/memo-glove.html">Previous: Memo Glove</a>
+        </p>
+        <p class="unimportant">
+            Photography
+            <br>Publication         
+        </p>
+        <p class="span2">A personal portfolio website. Designed and developed by myself. Intended to teach myself how to code html, css and javascript, as well as present a showcase of university and personal design projects. View site <a target="_blank" href="https://phoebelidesign.github.io/">here</a>.</p>
+    </div>
+    <div class="project">
+        <div class="projectGrid">
+            <p>Site navigation</p>
+            <video class="span4" width="100%" height="auto" autoplay loop>
+                <source src="../Assets/pp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Site design</p>
+            <div class="span4">
+                <img src="../Assets/pp-1.webp">
+            </div>
+            <p>Development</p>
+            <div class="span3">
+                <div class="slideContainer">
+                    <div class="slide">
+                        <img src="../Assets/jfn-1.webp" style="width:100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-6.webp" style="width:100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../Assets/jfn-10.webp" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
