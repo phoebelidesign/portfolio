@@ -148,8 +148,8 @@ a:hover{
     z-index: 10;
 }
 .navOverlay.left-hover{
-    cursor: url('data:image/svg+xml;utf8,<svg fill="black" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>') 16 16, auto;
+    cursor: url('data:image/svg+xml;utf8,<svg fill="black" height="70" viewBox="0 0 24 24" width="70" xmlns="http://www.w3.org/2000/svg"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>') 35 35, auto;
 }
 .navOverlay.right-hover{
-    cursor: url('data:image/svg+xml;utf8,<svg fill="black" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>') 16 16, auto;
+    cursor: url('data:image/svg+xml;utf8,<svg fill="black" height="70" viewBox="0 0 24 24" width="70" xmlns="http://www.w3.org/2000/svg"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>') 35 35, auto;
 }
