@@ -24,12 +24,16 @@ a:hover{
     text-decoration: underline;
 }
 
+p.centre{
+    padding: 10px 20px 20px;
+}
+
 /* navbar */
 .navbar{
     top: 0;
     z-index: 999;
     position: sticky;
-    padding: 20px;
+    padding: 20px 20px 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 20px;
